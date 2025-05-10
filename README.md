@@ -1,34 +1,44 @@
-Stock Price Prediction App
-This application predicts stock prices using two machine learning models: Linear Regression and Long Short-Term Memory (LSTM). It performs a comparative analysis to evaluate the accuracy and performance of each model in forecasting future stock prices.
+# Stock Price Prediction App
 
-Features
-Data preprocessing and visualization
+## Overview
+This project compares two models — Linear Regression and Long Short-Term Memory (LSTM) — for predicting stock prices using historical data. The goal is to evaluate their effectiveness in modeling time-series financial data.
 
-Stock price prediction using:
+## Dataset Used
+- **Stock Price Dataset** from Kaggle  
+  URL: https://www.kaggle.com/datasets/mrsimple07/stock-price-prediction
 
-Linear Regression (Traditional Machine Learning)
+## Models Applied
+- Linear Regression (Classical Machine Learning)
+- LSTM (Long Short-Term Memory Neural Network)
 
-LSTM (Deep Learning)
+## Technologies
+- Python 3.x
+- pandas, numpy
+- matplotlib, seaborn
+- scikit-learn
+- TensorFlow / Keras
+- Jupyter Notebook
 
-Comparative analysis of model results
+## Workflow
 
-Visualization of actual vs predicted prices
+### 1. Data Preprocessing
+- Loading CSV stock price data
+- Normalization / Scaling
+- Feature selection (e.g., 'Close' price)
+- Train-test split
 
-Dataset
-The dataset used for this project is available on Kaggle:
-https://www.kaggle.com/datasets/mrsimple07/stock-price-prediction
+### 2. Model Training
+- Linear Regression model with sklearn
+- LSTM model using Keras Sequential API
+- Evaluation using MSE (Mean Squared Error)
 
-Technologies Used
-Python
+### 3. Visualization and Comparison
+- Plotting predicted vs. actual prices
+- Visual and quantitative comparison of both models
+- Interpretation of LSTM sequence learning vs. Linear trends
 
-Libraries:
-
-NumPy, Pandas
-
-Matplotlib, Seaborn (Visualization)
-
-Scikit-learn (Linear Regression)
-
-TensorFlow / Keras (LSTM)
-
-Jupyter Notebook for experimentation and presentation
+## Key Insights
+- LSTM is better suited for capturing temporal dependencies in stock data
+- Linear Regression offers faster computation but limited pattern recognition
+- Proper preprocessing is essential for both models
+- Visualizations help interpret and validate predictions
